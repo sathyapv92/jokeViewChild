@@ -1,18 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { NgModule } from '@angular/core';
-
-
-import { AppComponent } from './app.component';
-
+import { BrowserModule } from '@angular/platform-browser';
+import{AppComponent,JokeComponent,JokeListComponent} from './app.component';
 
 @NgModule({
+  imports: [BrowserModule],
   declarations: [
-    AppComponent
+    AppComponent,
+    JokeComponent,
+    JokeListComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
+
